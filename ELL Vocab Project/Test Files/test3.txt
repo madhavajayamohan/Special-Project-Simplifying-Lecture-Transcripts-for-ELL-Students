@@ -1,0 +1,36 @@
+Professor: Alright, let’s start today by reviewing control flow. 
+We've talked about conditionals before, but let’s take it a step further. 
+Suppose we have a grading system where scores determine letter grades. 
+We’ll write a function using if-elif-else statements.
+
+[Writes on board]
+
+ def get_grade(score):
+     if score >= 90:
+         return "A"
+     elif score >= 80:
+         return "B"
+     elif score >= 70:
+         return "C"
+     elif score >= 60:
+         return "D"
+     else:
+         return "F"
+
+This is straightforward, but think about refactoring. 
+The structure is fine, but notice that our conditions overlap. 
+A cleaner way would be to start from the lowest case and move up. 
+Also, let’s write some doctests for verification.
+
+[Writes on board]
+
+ def get_grade(score):
+     """
+     >>> get_grade(95)
+     'A'
+     >>> get_grade(85)
+     'B'
+     """
+     return "F" if score < 60 else "D" if score < 70 else "C" if score < 80 else "B" if score < 90 else "A"
+
+Refactored into a single expression. Now, who can tell me the trade-off here?

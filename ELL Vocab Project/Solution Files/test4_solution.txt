@@ -1,0 +1,53 @@
+Professor: Today we’ll discuss iteration with lists and dictionaries. 
+
+Lists are mutable ordered collections of values, created with square brackets. E.g. 
+lst = [1, 2, 3]
+
+Dictionaries are key-value pairs stored in curly braces {}. E.g 
+d = {'name': 'Alice', 'age': 25}
+
+You should already be comfortable with for and while loops, so let’s apply them. 
+
+For loops are loops that iterate over iterable objects like lists, tuples, and strings. E.g
+for i in range(5):
+    print(i)
+
+While loops are loops that run as long as a condition is True. E.g.
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+
+Imagine we have a list of student scores. 
+How do we find the average?
+
+[Writes on board]
+
+scores = [85, 90, 78, 92, 88]
+total = 0
+for score in scores:
+    total += score
+average = total / len(scores)
+
+What’s the complexity of this approach? 
+
+The complexity of an algorithim refers to the efficiency of an algorithm in terms of time and space, often analyzed using Big-O notation.
+
+The complexity of this approach is O(n). 
+Now, let’s say we have a dictionary where keys are student names and values are scores.
+
+[Writes on board]
+
+students = {"Alice": 90, "Bob": 80, "Charlie": 70}
+for name, score in students.items():
+    print(f"{name} scored {score}")
+
+Think about cases where dictionaries are more efficient than lists. 
+
+Lists are mutable ordered collections of values, created with square brackets. E.g. 
+lst = [1, 2, 3]
+
+Dictionaries are key-value pairs stored in curly braces {}. E.g 
+d = {'name': 'Alice', 'age': 25}
+
+Where do we see an advantage in retrieval time?

@@ -1,0 +1,25 @@
+Professor: Today we’ll discuss iteration with lists and dictionaries. 
+You should already be comfortable with for and while loops, so let’s apply them. 
+Imagine we have a list of student scores. 
+How do we find the average?
+
+[Writes on board]
+
+scores = [85, 90, 78, 92, 88]
+total = 0
+for score in scores:
+    total += score
+average = total / len(scores)
+
+What’s the complexity of this approach? 
+O(n). 
+Now, let’s say we have a dictionary where keys are student names and values are scores.
+
+[Writes on board]
+
+students = {"Alice": 90, "Bob": 80, "Charlie": 70}
+for name, score in students.items():
+    print(f"{name} scored {score}")
+
+Think about cases where dictionaries are more efficient than lists. 
+Where do we see an advantage in retrieval time?

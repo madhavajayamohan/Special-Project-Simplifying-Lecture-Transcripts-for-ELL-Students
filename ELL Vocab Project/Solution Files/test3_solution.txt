@@ -1,0 +1,55 @@
+Professor: Alright, let’s start today by reviewing control flow. 
+
+Control flow refers to the order in which individual statements, instructions, or function calls are executed in a program.
+It determines how a program progresses based on conditions, loops, and function calls.
+
+We've talked about conditionals before, but let’s take it a step further. 
+
+Conditionals are control flow statements that execute different blocks of code based on conditions. E.g 
+if condition:
+    # Code executes if condition is true
+elif another_condition:
+    # Runs if previous condition was false
+else:
+    # Runs if none of the conditions are true
+
+Suppose we have a grading system where scores determine letter grades. 
+We’ll write a function using if-elif-else statements.
+
+[Writes on board]
+
+ def get_grade(score):
+     if score >= 90:
+         return "A"
+     elif score >= 80:
+         return "B"
+     elif score >= 70:
+         return "C"
+     elif score >= 60:
+         return "D"
+     else:
+         return "F"
+
+This is straightforward, but think about refactoring. 
+
+Code Refactoring is when we improve code readability, efficiency, or maintainability without changing its behavior.
+
+The structure is fine, but notice that our conditions overlap. 
+A cleaner way would be to start from the lowest case and move up. 
+Also, let’s write some doctests for verification.
+
+Doctests are inline tests written in the docstring of a function that demonstrate expected behavior.
+A docstring is a special multiline string inside a function that describes its purpose, parameters, return value, and other details.
+
+[Writes on board]
+
+ def get_grade(score):
+     """
+     >>> get_grade(95)
+     'A'
+     >>> get_grade(85)
+     'B'
+     """
+     return "F" if score < 60 else "D" if score < 70 else "C" if score < 80 else "B" if score < 90 else "A"
+
+Refactored into a single expression. Now, who can tell me the trade-off here?
