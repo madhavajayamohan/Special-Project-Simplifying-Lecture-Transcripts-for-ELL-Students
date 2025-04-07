@@ -1,36 +1,12 @@
-Professor: Alright, let’s start today by reviewing control flow. 
-We've talked about conditionals before, but let’s take it a step further. 
-Suppose we have a grading system where scores determine letter grades. 
-We’ll write a function using if-elif-else statements.
+So today we’re diving into loops. 
+If you’ve ever felt like you’re typing the same thing over and over, you’re probably barking up the wrong tree. 
+That’s what loops are for—they let you automate repetition and avoid writing a bunch of redundant code. 
+A for loop is your bread and butter when you know how many times something should happen. 
+On the other hand, a while loop is more of a wildcard—you use it when the number of iterations is up in the air.
 
-[Writes on board]
-
- def get_grade(score):
-     if score >= 90:
-         return "A"
-     elif score >= 80:
-         return "B"
-     elif score >= 70:
-         return "C"
-     elif score >= 60:
-         return "D"
-     else:
-         return "F"
-
-This is straightforward, but think about refactoring. 
-The structure is fine, but notice that our conditions overlap. 
-A cleaner way would be to start from the lowest case and move up. 
-Also, let’s write some doctests for verification.
-
-[Writes on board]
-
- def get_grade(score):
-     """
-     >>> get_grade(95)
-     'A'
-     >>> get_grade(85)
-     'B'
-     """
-     return "F" if score < 60 else "D" if score < 70 else "C" if score < 80 else "B" if score < 90 else "A"
-
-Refactored into a single expression. Now, who can tell me the trade-off here?
+Now, don’t just throw in a loop and hope for the best. 
+It’s easy to shoot yourself in the foot with an infinite loop if you forget to update your condition. 
+That’s a rookie mistake, and it’ll cost you time during debugging. 
+Think of your loop like a treadmill—you need to know how to stop it, or you’ll just keep running forever. 
+Keep your conditions clear, test them early, and you’ll save yourself a world of hurt. 
+Alright, let’s walk through a few examples together so you can get the hang of it.
