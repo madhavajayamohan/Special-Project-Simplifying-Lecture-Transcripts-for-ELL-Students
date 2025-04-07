@@ -1,98 +1,58 @@
 # Special Project: Simplifying Lecture Transcripts for ELL Students
 
-Prof. A has decided to provide transcripts of all of his CS1 lectures to allow ELL students to review them on their own time. However, when he looks at the transcripts, he realized that some concepts weren't appropriately explained in the transcript.
+The goal of this assignment is to make you consider solutions for how to help ELL students, and help you practice how to combine concepts you have learned over the entirety of CSC108 such as:
 
-Prof. A tasks you with simplifying the transcripts by adding definitions to certain subject specific vocabulary. In order to simplify this task, Prof A has graciously given you the following information:
+Manipulating Strings
+Reading and Writing to Files
+For Loops
+Utilizing Dictionaries
+Conditionals
 
-1. A dictionary called VOCAB_TO_DEFINITION that maps certain vocabulary terms to their definition
-2. A starter file with two functions: simplify_line and simplify_definition
-3. Some initial lecture transcript files that you can use for testing, along with solution txt files that describe what the simplified file looks like
+## Context:
 
-Your goal is to complete the functions simplify_line and simplify_transcript (hint: simplify_line), and produce new, simplified lecture transcripts as txt files.
+In order to help ELL students, Professor Ajaya wants to make transcripts of his lectures available for students to review concepts after class. However, when he reviews the transcripts, he realizes that he used idioms and expressions that ELL students may not be able to understand.
 
+In order to make the transcripts more accessible for ELL students, Professor Ajaya tasks you with writing a script that can create lecture transcripts with appropriate definitions.
 
-# Input Cases
+## Example
 
-## Case 1
-Let's say a lecture transcript is:
+Consider that the original transcript consists of one line:
 
-*Alright, let’s start today by reviewing control flow.*
+*Learning to code can feel like finding a needle in a haystack sometimes.*
 
-The word "control flow" is a term in the VOCAB_TO_DEFINITION dictionary. Therefore, your simplified lecture transcript should be 
-(the text in closed brackets aren't part of the ouput; they just explain spacing):
+However, the ELL students may not understand the idiom finding a needle in a haystack.  So, you need to produce a new transcript like so:
 
-*Alright, let’s start today by reviewing control flow.*
+*Learning to code can feel like finding a needle in a haystack sometimes.*
 
-*[paragraph break]*
+*When someone says that finding something is like trying to find a 'needle in a haystack,' it means that its very hard or near impossible to find it.*
 
-*Control flow refers to the order in which individual statements, instructions, or function calls are executed in a program. [line break]*
-*It determines how a program progresses based on conditions, loops, and function calls.*
+In essence, you need to insert the definition of the term in the new file
 
-*[There should be two empty lines after the last line]*
+## Tools Given to You
 
-## Case 2
+In order to complete this task, you have been given:
 
-Let's say a lecture transcript is:
+A dictionary called IDIOM_TO_DEFINITION that maps vocabulary terms to their definition. From the above example, "control flow" would be a key, while its definition is the value
+A function called test_file_equality that tells you whether two files have the same content or not
+Five files that will help you get started with testing, along what they are supposed to look like
 
-*Today we’ll discuss iteration with lists and dictionaries.*
+## Your Task
 
-Both the terms 'lists' and 'dictionaries' are in in the VOCAB_TO_DEFINITION dictionary. Therefore, your simplified lecture transcript should be:
+For this project, you must:
 
-in the VOCAB_TO_DEFINITION dictionary. Therefore, your simplified lecture transcript should be:
+1. Complete the function simplify_line. simplify_line, given a string, checks whether or not the string contains any vocabulary we need to provide definitions for. If there is vocabulary we need to provide a definition for, it returns a new string with the original line, and the definitions. In order to complete this task, consider:
+   i. All the expressions you need definitions for is given by the keys of the IDIOM_TO_DEFINITION dictionary
+   ii. You need to go through each word in the given line, and detect whether or not the word is a key in  IDIOM_TO_DEFINITION.
+   iii. You must also consider the fact that IDIOM_TO_DEFINITION has keys that contain for multiple words– when going through the line, you must take into account how it has multiple words
+   iv. You should be able to detect an idiom in the list, even if it in a different case from the key in the dictionary
+   v. If you detect a vocabulary word, you need to insert the definition after the line– specifically there must be one empty line in-between the original line and the definition, and one empty line after the definition
+   vi. If you detect multiple vocabulary words in the same sentence, then you must insert the definitions for each word in order of appearance. For example, if "piece of cake" comes before "half the battle" then the definition for "piece of cake" must be added before the definition of "half the battle". Both definitions comes after the original line.
+   vii. There should be an empty line in-between the original line and each definition. There should be an empty line after the definition
+2. Complete the function simplify_transcript. simplify_transcript, given the file name to a txt file (the lecture transcript) writes a new txt file that represents the simplified transcript with additional definitions.
+   i. Every single line on the given txt file represents a sentence of the lecture transcript.
+   ii. Make sure to utilize simplify_line in order to complete this task.
+   iii. Make sure to test whether your function works with test_file_equality to compare the new file you produce and the solution files.
 
-*Today we’ll discuss iteration with lists and dictionaries.*
+# Testing
 
-*[paragraph break]*
-
-*Lists are mutable ordered collections of values, created with square brackets. E.g. [line break]
-lst = [1, 2, 3]*
-
-*[paragraph break]*
-
-*Dictionaries are key-value pairs stored in curly braces {}. E.g [line break]*
-*d = {'name': 'Alice', 'age': 25}*
-
-*[There should be two empty lines after the last line]*
-
-## Case 3
-
-Let's say a lecture transcript is:
-
-*Today we’ll discuss iteration with lists and dictionaries. [line break]*
-
-*Are you excited?*
-
-The simplified lecture transcript should be:
-
-*Today we’ll discuss iteration with lists and dictionaries.*
-
-*[paragraph break]*
-
-*Lists are mutable ordered collections of values, created with square brackets. E.g. (line break)
-*lst = [1, 2, 3]*
-
-*[paragraph break]*
-
-*Dictionaries are key-value pairs stored in curly braces {}. E.g [line break]*
-*d = {'name': 'Alice', 'age': 25}*
-
-*[paragraph break]*
-
-*Are you excited?*
-
-## Case 4
-
-Let's say a lecture transcript is:
-
-*Lists are a really useful tool in programming.*
-
-Note that while 'lists' is a term contained in the VOCAB_TO_DEFINITION dictionary, Lists is not a term contained in the VOCAB_TO_DEFINITION dictionary. Despit this, the simplified lecture transcript should be:
-
-*Lists are a really useful tool in programming.*
-
-*[paragraph break]*
-
-*Lists are mutable ordered collections of values, created with square brackets. E.g. [line break]*
-*lst = [1, 2, 3]*
-
-*[There should be two empty lines after the last line]*
+Consider what kind of additional testing you need to do for this assignment. What might be potential edge cases? Which function is the easiest to test? What type of testing do you need for both functions?
