@@ -8,7 +8,7 @@ VOCAB_TO_DEFINITION = {
     "lists":"Lists are mutable ordered collections of values, created with square brackets. E.g.\nlst = [1, 2, 3]",
     "dictionaries":"Dictionaries are key-value pairs stored in curly braces {}. E.g\nd = {'name': 'Alice', 'age': 25}",
     "for loops":"For loops are loops that iterate over iterable objects like lists, tuples, and strings. E.g\nfor i in range(5):\n\tprint(i)",
-    "while loops":"While loops are loops that run as long as a condition is True. E.g.\nx = 0\nwhile x < 5:\n\t print(x)\n\tx += 1",
+    "while loops":"While loops are loops that run as long as a condition is True. E.g.\nx = 0\nwhile x < 5:\n\tprint(x)\n\tx += 1",
     "complexity":"The complexity of an algorithim refers to the efficiency of an algorithm in terms of time and space, often analyzed using Big-O notation.",
     "OOP":"Object Oriented Programming (OOP) is a parogramming paradigm that models problems using classes and objects.",
     "Sorting":"Sorting refers to a common concept in programming where we want to arrange elements according to a certain order.\nCommon sorting algorithms include merge sort and quick sort."
