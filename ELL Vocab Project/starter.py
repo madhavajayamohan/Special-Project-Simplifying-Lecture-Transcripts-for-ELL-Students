@@ -13,7 +13,7 @@ IDIOM_TO_DEFINITION = {
     "get the hang of it": "When someone says you will 'get the hang of it', they are telling you that you will learn how to do soemthing after some practice.",
     "needle in a haystack": "When someone says that finding something is like trying to find a 'needle in a haystack,' it means that its very hard or near impossible to find it.",
     "playing hide and seek": "The phrase 'playing hide and seek' means that something appears and disappears, making it hard to find.",
-    "reinvent the wheel": "The phrase to 'reinvent the wheel' referes to making something from scratch even though it already exists.",
+    "reinvent the wheel": "The phrase to 'reinvent the wheel' refers to making something from scratch even though it already exists.",
     "treasure map": "A 'treasure map' can refer to  set of clues that lead to a solution.",
     "banging your head against the wall":"The phrase 'banging your head against the wall' means trying hard and failing again and again.",
     "roll up your sleeves": "The phrase 'roll up your sleeves' means that you should get ready to do hard work.",
