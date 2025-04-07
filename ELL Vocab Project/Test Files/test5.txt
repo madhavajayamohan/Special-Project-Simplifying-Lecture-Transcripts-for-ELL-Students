@@ -1,0 +1,40 @@
+Alright class, today we’re going to focus on how we structure programs beyond just writing a few lines of code that run from top to bottom. 
+You’ve already used control flow quite a bit, maybe without realizing it—especially when working with conditionals and loops. 
+Now we’re going to look at how to combine those ideas to build programs that are not only correct but also maintainable and easy to read.
+
+Let’s begin with a simple problem: we want to build a small command-line tool that takes a list of numbers from the user and returns the largest even number. 
+Straightforward, right? 
+But here’s where we start thinking like computer scientists. 
+Should we use a for loop or a while loop? 
+Both would work, but one might be clearer in terms of intent. 
+And if we decide to refactor the code later, readability becomes even more important.
+
+As you work on problems like this, you’ll probably write a first version that works—and that’s great! 
+But that first version might not be the cleanest. 
+Refactoring helps us here. 
+For instance, if you find yourself writing the same few lines of code over and over, maybe that logic should go in a function. 
+Or maybe your nested conditionals are too hard to read—flattening them out or splitting up your logic can make a big difference.
+
+Once we’ve got a function we’re happy with, we should test it. 
+You’ve learned how to write tests with assert, but now let’s try writing a doctest. 
+When someone reads your function’s docstring and sees an example call right there, it helps both as documentation and verification. 
+And if it fails, you immediately know something’s off.
+
+Let’s take a quick detour into data structures. 
+In this assignment, we’ve been using lists, but maybe you’ll hit a point where you want to keep track of more structured information—like user input history or statistics. 
+That’s a good place to introduce dictionaries. 
+You can map string keys like "even_count" to their values, which helps organize your data better as the program grows.
+
+Later this week, we’ll also look at how sorting fits into things. 
+Suppose you wanted to return not just the largest even number, but the top three even numbers. 
+Sorting your list first could make that task a lot easier.
+
+And for those of you curious about performance: as we start comparing different solutions, we’ll lightly touch on algorithmic complexity. 
+Knowing whether your sort or loop takes linear vs quadratic time can be helpful, especially when you move to larger input sizes.
+
+Finally, some of you have asked about organizing larger programs. 
+That’s where we’ll eventually introduce OOP, but for now, just focus on using functions to break down tasks and keep your logic clean.
+
+Alright, that’s it for today. 
+Make sure to review your assignment’s control flow and try adding at least one doctest to each function. 
+Next class, we’ll talk about how to validate user input and build simple menus using loops and conditionals.
