@@ -1,8 +1,7 @@
-Today we’ll discuss iteration with lists and dictionaries.
+Once you wrap your head around how for loops work, the rest of the assignment should be a piece of cake.
 
-Lists are mutable ordered collections of values, created with square brackets. E.g. 
-lst = [1, 2, 3]
+The phrase 'wrap your head around' means to understand something complex.
 
-Dictionaries are key-value pairs stored in curly braces {}. E.g 
-d = {'name': 'Alice', 'age': 25}
+To say a task is 'a piece of cake' means that it is very easy to do.
+
 
