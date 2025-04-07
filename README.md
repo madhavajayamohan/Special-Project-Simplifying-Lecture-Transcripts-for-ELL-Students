@@ -41,17 +41,17 @@ Five files that will help you get started with testing, along what they are supp
 For this project, you must:
 
 1. Complete the function simplify_line. simplify_line, given a string, checks whether or not the string contains any vocabulary we need to provide definitions for. If there is vocabulary we need to provide a definition for, it returns a new string with the original line, and the definitions. In order to complete this task, consider:
-   i. All the expressions you need definitions for is given by the keys of the IDIOM_TO_DEFINITION dictionary
-   ii. You need to go through each word in the given line, and detect whether or not the word is a key in  IDIOM_TO_DEFINITION.
-   iii. You must also consider the fact that IDIOM_TO_DEFINITION has keys that contain for multiple words– when going through the line, you must take into account how it has multiple words
-   iv. You should be able to detect an idiom in the list, even if it in a different case from the key in the dictionary
-   v. If you detect a vocabulary word, you need to insert the definition after the line– specifically there must be one empty line in-between the original line and the definition, and one empty line after the definition
-   vi. If you detect multiple vocabulary words in the same sentence, then you must insert the definitions for each word in order of appearance. For example, if "piece of cake" comes before "half the battle" then the definition for "piece of cake" must be added before the definition of "half the battle". Both definitions comes after the original line.
-   vii. There should be an empty line in-between the original line and each definition. There should be an empty line after the definition
+   1. All the expressions you need definitions for is given by the keys of the IDIOM_TO_DEFINITION dictionary
+   2. You need to go through each word in the given line, and detect whether or not the word is a key in  IDIOM_TO_DEFINITION.
+   3. You must also consider the fact that IDIOM_TO_DEFINITION has keys that contain for multiple words– when going through the line, you must take into account how it has multiple words
+   4. You should be able to detect an idiom in the list, even if it in a different case from the key in the dictionary
+   5. If you detect a vocabulary word, you need to insert the definition after the line– specifically there must be one empty line in-between the original line and the definition, and one empty line after the definition
+   6. If you detect multiple vocabulary words in the same sentence, then you must insert the definitions for each word in order of appearance. For example, if "piece of cake" comes before "half the battle" then the definition for "piece of cake" must be added before the definition of "half the battle". Both definitions comes after the original line.
+   7. There should be an empty line in-between the original line and each definition. There should be an empty line after the definition
 2. Complete the function simplify_transcript. simplify_transcript, given the file name to a txt file (the lecture transcript) writes a new txt file that represents the simplified transcript with additional definitions.
-   i. Every single line on the given txt file represents a sentence of the lecture transcript.
-   ii. Make sure to utilize simplify_line in order to complete this task.
-   iii. Make sure to test whether your function works with test_file_equality to compare the new file you produce and the solution files.
+   1. Every single line on the given txt file represents a sentence of the lecture transcript.
+   2. Make sure to utilize simplify_line in order to complete this task.
+   3. Make sure to test whether your function works with test_file_equality to compare the new file you produce and the solution files.
 
 # Testing
 
