@@ -1,1 +1,7 @@
-Today we’ll discuss iteration with lists and dictionaries.
+Once you wrap your head around how for loops work, the rest of the assignment should be a piece of cake.
+
+The phrase 'wrap your head around' means to understand something complex.
+
+To say a task is 'a piece of cake' means that it is very easy to do.
+
+
