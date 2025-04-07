@@ -5,7 +5,7 @@ Now we’re going to look at how to combine those ideas to build programs that a
 Let’s begin with a simple problem: we want to build a small command-line tool that takes a list of numbers from the user and returns the largest even number. 
 Straightforward, right? 
 But here’s where we start thinking like computer scientists. 
-Should we use a for loop or a while loop? 
+Should we use for loops or while loops? 
 Both would work, but one might be clearer in terms of intent. 
 And if we decide to refactor the code later, readability becomes even more important.
 
@@ -16,7 +16,7 @@ For instance, if you find yourself writing the same few lines of code over and o
 Or maybe your nested conditionals are too hard to read—flattening them out or splitting up your logic can make a big difference.
 
 Once we’ve got a function we’re happy with, we should test it. 
-You’ve learned how to write tests with assert, but now let’s try writing a doctest. 
+You’ve learned how to write tests with assert, but now let’s try writing doctests. 
 When someone reads your function’s docstring and sees an example call right there, it helps both as documentation and verification. 
 And if it fails, you immediately know something’s off.
 
