@@ -1,53 +1,38 @@
-Professor: Today we’ll discuss iteration with lists and dictionaries. 
+Let’s talk about debugging. 
+When your code doesn’t work, don’t panic. 
+We’ve all been there. 
+Debugging is like finding a needle in a haystack—it can feel impossible at first, but there’s always a pattern.
 
-Lists are mutable ordered collections of values, created with square brackets. E.g. 
-lst = [1, 2, 3]
+When someone says that finding something is like trying to find a 'needle in a haystack,' it means that its very hard or near impossible to find it.
 
-Dictionaries are key-value pairs stored in curly braces {}. E.g 
-d = {'name': 'Alice', 'age': 25}
+Start by checking what you can control. 
+Are your variables doing what you expect? 
+Print statements are your best friend at this stage.
 
-You should already be comfortable with for and while loops, so let’s apply them. 
+Sometimes it feels like the bug is playing hide and seek with you. 
 
-For loops are loops that iterate over iterable objects like lists, tuples, and strings. E.g
-for i in range(5):
-    print(i)
+The phrase 'playing hide and seek' means that something appears and disappears, making it hard to find.
 
-While loops are loops that run as long as a condition is True. E.g.
-x = 0
-while x < 5:
-    print(x)
-    x += 1
+It shows up one minute, disappears the next. 
+That’s totally normal. 
+The key is not to reinvent the wheel—use the tools we’ve already covered. 
 
-Imagine we have a list of student scores. 
-How do we find the average?
+The phrase to 'reinvent the wheel' refers to making something from scratch even though it already exists.
 
-[Writes on board]
+Read your error messages like a treasure map. 
 
-scores = [85, 90, 78, 92, 88]
-total = 0
-for score in scores:
-    total += score
-average = total / len(scores)
+A 'treasure map' can refer to  set of clues that lead to a solution.
 
-What’s the complexity of this approach? 
+They’re not just gibberish—they’re pointing you toward the problem.
 
-The complexity of an algorithim refers to the efficiency of an algorithm in terms of time and space, often analyzed using Big-O notation.
+Now, I know it can feel like you’re banging your head against the wall when nothing’s working. 
 
-The complexity of this approach is O(n). 
-Now, let’s say we have a dictionary where keys are student names and values are scores.
+The phrase 'banging your head against the wall' means trying hard and failing again and again.
 
-[Writes on board]
+But trust me, getting through a tough bug teaches you more than an easy assignment ever will. 
+Embrace the mess. 
+Roll up your sleeves. 
 
-students = {"Alice": 90, "Bob": 80, "Charlie": 70}
-for name, score in students.items():
-    print(f"{name} scored {score}")
+The phrase 'roll up your sleeves' means that you should get ready to do hard work.
 
-Think about cases where dictionaries are more efficient than lists. 
-
-Lists are mutable ordered collections of values, created with square brackets. E.g. 
-lst = [1, 2, 3]
-
-Dictionaries are key-value pairs stored in curly braces {}. E.g 
-d = {'name': 'Alice', 'age': 25}
-
-Where do we see an advantage in retrieval time?
+This is where real programmers are made.
