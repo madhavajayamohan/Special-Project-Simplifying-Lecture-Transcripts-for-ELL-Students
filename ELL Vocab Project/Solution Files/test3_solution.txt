@@ -1,55 +1,32 @@
-Professor: Alright, let’s start today by reviewing control flow. 
+So today we’re diving into loops. 
+If you’ve ever felt like you’re typing the same thing over and over, you’re probably barking up the wrong tree. 
 
-Control flow refers to the order in which individual statements, instructions, or function calls are executed in a program.
-It determines how a program progresses based on conditions, loops, and function calls.
+The phrase 'barking up the wrong tree' means you are trying something that won’t work or is not the right solution.
 
-We've talked about conditionals before, but let’s take it a step further. 
+That’s what loops are for—they let you automate repetition and avoid writing a bunch of redundant code. 
+A for loop is your bread and butter when you know how many times something should happen. 
 
-Conditionals are control flow statements that execute different blocks of code based on conditions. E.g 
-if condition:
-    # Code executes if condition is true
-elif another_condition:
-    # Runs if previous condition was false
-else:
-    # Runs if none of the conditions are true
+The 'bread and butter' of a subject is the basic and most fundeamental concept of the subject.
 
-Suppose we have a grading system where scores determine letter grades. 
-We’ll write a function using if-elif-else statements.
+On the other hand, a while loop is more of a wildcard—you use it when the number of iterations is up in the air.
 
-[Writes on board]
+The phrase 'wildcard' refers to something that can change or is hard to predict.
 
- def get_grade(score):
-     if score >= 90:
-         return "A"
-     elif score >= 80:
-         return "B"
-     elif score >= 70:
-         return "C"
-     elif score >= 60:
-         return "D"
-     else:
-         return "F"
+When something is 'up in the air' it means that it is not decided or known yet.
 
-This is straightforward, but think about refactoring. 
 
-Code Refactoring is when we improve code readability, efficiency, or maintainability without changing its behavior.
+Now, don’t just throw in a loop and hope for the best. 
+It’s easy to shoot yourself in the foot with an infinite loop if you forget to update your condition. 
 
-The structure is fine, but notice that our conditions overlap. 
-A cleaner way would be to start from the lowest case and move up. 
-Also, let’s write some doctests for verification.
+When you 'shoot yourslef in the foot,' that means you accidently make your own problem.
 
-Doctests are inline tests written in the docstring of a function that demonstrate expected behavior.
-A docstring is a special multiline string inside a function that describes its purpose, parameters, return value, and other details.
+That’s a rookie mistake, and it’ll cost you time during debugging. 
 
-[Writes on board]
+A 'rookie' mistake refers to an error commonly made by beginners.
 
- def get_grade(score):
-     """
-     >>> get_grade(95)
-     'A'
-     >>> get_grade(85)
-     'B'
-     """
-     return "F" if score < 60 else "D" if score < 70 else "C" if score < 80 else "B" if score < 90 else "A"
+Think of your loop like a treadmill—you need to know how to stop it, or you’ll just keep running forever. 
+Keep your conditions clear, test them early, and you’ll save yourself a world of hurt. 
 
-Refactored into a single expression. Now, who can tell me the trade-off here?
+The phrase 'save yourself a world of hurt' means you can avoid a lot problems or pain.
+
+Alright, let’s walk through a few examples together so you can get the hang of it.
