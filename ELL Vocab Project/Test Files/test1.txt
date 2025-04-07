@@ -1,1 +1,1 @@
-Alright, let’s start today by reviewing control flow.
+Learning to code can feel like finding a needle in a haystack sometimes.
