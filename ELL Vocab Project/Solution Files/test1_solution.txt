@@ -1,5 +1,4 @@
-Alright, let’s start today by reviewing control flow.
+Learning to code can feel like finding a needle in a haystack sometimes.
 
-Control flow refers to the order in which individual statements, instructions, or function calls are executed in a program.
-It determines how a program progresses based on conditions, loops, and function calls.
+When someone says that finding something is like trying to find a 'needle in a haystack,' it means that its very hard or near impossible to find it.
 
