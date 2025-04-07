@@ -1,25 +1,20 @@
-Professor: Today we’ll discuss iteration with lists and dictionaries. 
-You should already be comfortable with for and while loops, so let’s apply them. 
-Imagine we have a list of student scores. 
-How do we find the average?
+Let’s talk about debugging. 
+When your code doesn’t work, don’t panic. 
+We’ve all been there. 
+Debugging is like finding a needle in a haystack—it can feel impossible at first, but there’s always a pattern. 
+Start by checking what you can control. 
+Are your variables doing what you expect? 
+Print statements are your best friend at this stage.
 
-[Writes on board]
+Sometimes it feels like the bug is playing hide and seek with you. 
+It shows up one minute, disappears the next. 
+That’s totally normal. 
+The key is not to reinvent the wheel—use the tools we’ve already covered. 
+Read your error messages like a treasure map. 
+They’re not just gibberish—they’re pointing you toward the problem.
 
-scores = [85, 90, 78, 92, 88]
-total = 0
-for score in scores:
-    total += score
-average = total / len(scores)
-
-What’s the complexity of this approach? 
-O(n). 
-Now, let’s say we have a dictionary where keys are student names and values are scores.
-
-[Writes on board]
-
-students = {"Alice": 90, "Bob": 80, "Charlie": 70}
-for name, score in students.items():
-    print(f"{name} scored {score}")
-
-Think about cases where dictionaries are more efficient than lists. 
-Where do we see an advantage in retrieval time?
+Now, I know it can feel like you’re banging your head against the wall when nothing’s working. 
+But trust me, getting through a tough bug teaches you more than an easy assignment ever will. 
+Embrace the mess. 
+Roll up your sleeves. 
+This is where real programmers are made.
